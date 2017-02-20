@@ -1,0 +1,23 @@
+var contributions = {
+   "1487116800000":{
+      "contributionAmount":{
+         "currency":"£",
+         "amount":153.88
+      },
+      "contributionCount":677
+   },
+   "1486684800000":{
+      "contributionAmount":{
+         "currency":"£",
+         "amount":200.85
+      },
+      "contributionCount":1063
+   },
+   "1486944000000":{
+      "contributionAmount":{
+         "currency":"£",
+         "amount":165.60
+      },
+      "contributionCount":941
+   }
+}
