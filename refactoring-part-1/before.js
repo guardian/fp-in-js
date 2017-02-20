@@ -1,25 +1,22 @@
 getContributionsTimeSeries('contributionAmount', contributions);
 
-// before
-function getContributionsTimeSeries(key) {
-    var timeSeries = [];
-    for (var date in contributions) {
-        if (contributions.hasOwnProperty(date)) {
+// after
+function fixEmptyAmount(money) {
+    return (money === null) ? 0 : money['amount'];
+}
+
+function getContributionsTimeSeries(key, contributions) {
+    return Object.keys(contributions)
+        .map(function(date){
             var dateInt = parseInt(date);
             if (key === 'contributionAmount') {
                 var money = contributions[date][key];
-                var amount;
-                if (money === null) {
-                    amount = 0;
-                } else {
-                    amount = money['amount'];
-                }
-                timeSeries.push([dateInt, amount]);
+                var amount = fixEmptyAmount(money);
+                return [dateInt, amount];
             }
-            else if (key === 'contributionCount') {
-                timeSeries.push([dateInt, contributions[date][key]]);
+            if (key === 'contributionCount') {
+                return [dateInt, contributions[date][key]];
             }
-        }
-    }
-    return timeSeries.sort();
+        })
+        .sort();
 };
