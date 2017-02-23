@@ -33,5 +33,5 @@ var newReleases = [
   }
 ];
 
-// Use .filter() and .map() to produce an array of
+// Use .filter() and .map() to return an array of
 // the ids of the films with a rating of 5.0

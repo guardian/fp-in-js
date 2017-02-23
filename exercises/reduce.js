@@ -31,5 +31,5 @@ var newReleases = [
   }
 ];
 
-// Use .filter() and .reduce() to produce highest film
-// which is available
+// Use .filter() and .reduce() to return the
+// highest-rated film which is available
