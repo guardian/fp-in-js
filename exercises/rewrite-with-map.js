@@ -11,5 +11,17 @@ for (var i=0; i < roots.length; i++) {
 }
 
 // Rewrite using the .map() method on Array.
-// (Ideally return the final contents of doubledRoots
-// without any intermediate variables)
+// (Ideally without storing any intermediate results in variables)
+
+// SYNTAX of .map()
+// var new_array = arr.map(callback[, thisArg])
+
+// PARAMETERS
+// callback: Function that produces an element of the new Array, taking three arguments:
+// currentValue: The current element being processed in the array.
+// index: The index of the current element being processed in the array.
+// array: The array map was called upon.
+// thisArg: Optional. Value to use as this when executing callback.
+
+// RETURN VALUE
+// A new array with each element being the result of the callback function.
