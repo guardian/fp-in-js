@@ -1,7 +1,3 @@
-setTimeout(1000, function() {
-	alert('surprise!');
-});
-
 fetch('http://ip.jsontest.com/')
 	.then(function(response) {
 		return response.text();
@@ -10,7 +6,13 @@ fetch('http://ip.jsontest.com/')
 		console.log(text);
 	});
 
-fs.unlink('/tmp/hello', function(err) {
-  if (err) throw err;
-  console.log('successfully deleted /tmp/hello');
+document.addEventListener('click', function(event) {
+	if (event.target.tagName === 'P') {
+  	event.target.style.color = 'blue';
+  }
 });
+
+function surprise {
+	alert('surprise!')
+};
+setTimeout(1000, surprise);
