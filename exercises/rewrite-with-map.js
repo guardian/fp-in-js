@@ -18,10 +18,12 @@ for (var i=0; i < roots.length; i++) {
 
 // PARAMETERS
 // callback: Function that produces an element of the new Array, taking three arguments:
+// thisArg: Optional. Value to use as this when executing callback.
+
+// PARAMETERS PASSED TO callback
 // currentValue: The current element being processed in the array.
 // index: The index of the current element being processed in the array.
 // array: The array map was called upon.
-// thisArg: Optional. Value to use as this when executing callback.
 
 // RETURN VALUE
 // A new array with each element being the result of the callback function.
