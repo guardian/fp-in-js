@@ -3,13 +3,13 @@ var newReleases = [
     "id": 70111470,
     "title": "Die Hard",
     "rating": 2.0,
-    "isAvailble": true
+    "isAvailable": true
   },
   {
     "id": 654356453,
     "title": "Bad Boys",
     "rating": 3.0,
-    "isAvailble": true
+    "isAvailable": true
   },
   {
     "id": 65432445,
